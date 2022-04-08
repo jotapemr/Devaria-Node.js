@@ -8,7 +8,7 @@ for(let controladorFor = 0; controladorFor < listaargumento.length; controladorF
 console.log('-------------------------executando um WHILE--------------------------')
 let controladorwhile = 0;
 while(controladorwhile < listaargumento.length){
-    console.log(`Posicao ${controladorwhile} valor lido = ${listaargumento[controladorwhile]}`);
+    console.log(`Posição ${controladorwhile} valor lido = ${listaargumento[controladorwhile]}`);
     controladorwhile++; //tem que colocar isso para não dar loop
 } 
 
