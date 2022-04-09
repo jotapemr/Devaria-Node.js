@@ -15,6 +15,9 @@ const listaprodutosdispon = produtosdisponiveis.filter(produto =>{
 listaprodutosdispon.forEach(produto => `Este produtos nós temos ${produto}`)
 
 const listaprodutosnaodisponiveis = listaargs.filter(argumento => {
-    return !listaprodutosdispon.find(produto => produto !== args)
+    return !listaprodutosdispon.find(produto => produto === argumento)
 })  
-listaprodutosnaodisponiveis.forEach(`argumento este produto nós não temos ${argumento}`)
+listaprodutosnaodisponiveis.forEach(argumento => console.log(`Este produto nós não temos ${argumento}`))
+
+const listadeprodutosordenados = listaprodutosdispon.sort(produto => produto)
+listadeprodutosordenados.forEach(produto => console.log(`Este produto está disponível ${produto}`))
